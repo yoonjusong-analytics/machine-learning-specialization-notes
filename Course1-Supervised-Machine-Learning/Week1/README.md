@@ -393,7 +393,7 @@ Convergence
 
 ### Gradient Descent
 
-The optional lab demonstrated how gradient descent updates model parameters over multiple iterations.\
+The optional lab demonstrated how gradient descent updates model parameters over multiple iterations.
 
 What I observed: 
 
