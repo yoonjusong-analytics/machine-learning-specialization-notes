@@ -151,9 +151,11 @@ Higher Cost means poorer predictions.
 
 ## Formula 
 
+```
 \[
 J(w,b)= \frac{1}{2m}\sum_{i=1}^{m}(f(x^{(i)})-y^{(i)})^2
 \]
+```
 
 Where 
 
@@ -242,9 +244,11 @@ J(w, b)
 
 The parameters are repeatedly updated using: 
 
+```
 w = w - α * dJ(w,b)/dw
 
 b = b- α * dJ(w,b)/db
+```
 
 where: 
 
@@ -271,8 +275,10 @@ Basic process:
 
 Pseudo-code:
 repeat until convergence:
+```
     w = w - α * dj_dw
     b = b - α * dj_db
+```
 
 ### 4.3 Gradient Descent Intuition
 
@@ -322,23 +328,31 @@ alpha = 1.0e-2
 
 For linear regression: 
 
+```
 f_wb(x) = wx + b
+```
 
 The cost function is: 
 
+```
 J(w,b) = (1 / 2m) ∑(f_wb(xᵢ) - yᵢ)²
+```
 
 Gradient descent calculates the gradients: 
 
+```
 dj_dw = (1 / m) Σ(f_wb(xᵢ) - yᵢ)xᵢ
 
 dj_db = (1 / m) Σ(f_wb(xᵢ) - yᵢ)
+```
 
 Then updates: 
 
+```
 w = w - α * dj_dw
 
 b = b- α * dj_db
+```
 
 By repeatedly updating `w` and `b`, the regression line gradually moves towards the line that minimizes prediction error. 
 
@@ -393,7 +407,7 @@ Convergence
 
 ### Gradient Descent
 
-The optional lab demonstrated how gradient descent updates model parameters over multiple iterations.\
+The optional lab demonstrated how gradient descent updates model parameters over multiple iterations.
 
 What I observed: 
 
